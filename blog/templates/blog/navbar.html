@@ -26,7 +26,7 @@
                             {% if user.socialaccount_set.all.first.get_avatar_url %}
                                 <img class="rounded-circle" width="25px" src="{{ user.socialaccount_set.all.first.get_avatar_url }}" alt="">
                             {% else %}
-                                <img class="rounded-circle" src="https://doitdjango.com/avatar/id/1450/4008dadc5d61792d/svg/{{ user.username }}.png" width="25px">
+                                <img class="rounded-circle" src="https://api.adorable.io/avatars/25/{{ user.username }}.png" alt="">
                             {% endif %}
                             &nbsp;
                             {{ user.username }}
